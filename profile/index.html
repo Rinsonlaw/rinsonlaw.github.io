@@ -1,0 +1,492 @@
+---
+title: Profile
+layout: default
+---
+
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Law | About</title>
+		<link rel="stylesheet" type="text/css" href="css/timeline.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container" style="margin:0;padding:0;width:100%;">
+			<header>
+				<img width="175" height="175" style="border-radius:50%;" src="/img/avatar-law.jpg">
+				<div class="en">
+					<h1>LUO Yonghao</h1>
+					<p><i class="fa fa-mars" aria-hidden="true" style="margin-right: 10px"></i>24
+					   <span style="margin-right: 20px"></span>
+					   <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px"></i>Guangzhou, China<br></p>
+					<p>Master degree candidate of Sun Yat-sen University <br>Research Interests: Artificial Intelligence (Computer Vision, Deep Learning, Knowledge Graph)</p>
+				</div>
+				<div class="zh">
+					<h1>罗永豪</h1>
+					<p><i class="fa fa-mars" aria-hidden="true" style="margin-right: 10px"></i>24
+					   <span style="margin-right: 20px"></span>
+					   <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px"></i>中国 广东省 广州市<br></p>
+					<p>中山大学研究生<br>研究方向：人工智能（计算机视觉，深度学习，知识图谱）</p>
+				</div>
+			</header>
+			<div class="container" style="font-size: 16px">
+				<!-- Language Selector -->
+				<div class="post-container clearfix">
+					<select class="sel-lang pull-right" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+						<option value="0" selected> 简体中文 </option>
+						<option value="1" > English </option>
+					</select>
+				</div>
+				
+
+				<!-- Chinese Version -->
+				<div class="zh post-container">
+
+					<!--copied from markdown -->
+					<blockquote>
+						<p>追光者</p>
+						<p></p>
+					</blockquote>
+					<h5><i class="fa fa-graduation-cap" aria-hidden="true" style="margin-right: 10px"></i>教育背景</h5>
+					<hr>
+					<div class="info-box">
+						<div class="row">
+							<div class="col-sm-3"><b>2016.09 - 至今</b></div>
+							<div class="col-sm-9">
+								<b>中山大学　非在职全日制硕士研究生</b><br>主修：数据科学与计算机学院　软件工程
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3"><b>2012.09 - 2016.07</b></div>
+							<div class="col-sm-9">
+								<b>中山大学　工学学士学位</b><br>主修：数据科学与计算机学院　软件工程（移动信息工程）<br>辅修：外国语学院　　　　　　日语
+							</div>
+						</div>
+					</div>
+					
+					<h5><i class="fa fa-code" aria-hidden="true" style="margin-right: 10px"></i>科研与项目经历</h5>
+					<hr>
+					<div class="info-box">
+						<div class="row">
+							<div class="col-sm-3"><b>2016.10 - 2017.02</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>场景图谱与图像特征对齐下的图像推理</b></div>
+									<div class="col-sm-4"><i>模型设计、核心代码</i></div>
+								</div>
+								
+								<ul>
+									<li>场景图谱与知识图谱类似，可以用三元组表示图像中物体、物体属性以及物体间的关系</li>
+									<li>图中物体及其属性用 CNN 提取特征，关系用包围盒位置特征，三元组用翻译模型编码</li>
+									<li>对齐模型把三元组的语义赋予图像，解决了一图多词、一词多义的问题，实现图像推理</li>
+									<div class="tags">
+										<a href="https://arxiv.org/abs/1311.2524">R-CNN</a>
+										<a href="https://www.ijcai.org/Proceedings/16/Papers/407.pdf">KR-EAR</a>
+										<a href="https://zh.wikipedia.org/wiki/计算机视觉">计算机视觉</a>
+										<a href="https://zh.wikipedia.org/wiki/机器学习">机器学习</a>
+										<a href="https://zh.wikipedia.org/wiki/Google知识图谱">知识图谱</a>
+										<a href="https://www.python.org/">Python</a>
+										<a href="https://cn.mathworks.com/">MATLAB</a>
+									</div>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3"><b>2016.12 - 2017.01</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>神经网络的贝叶斯权重初始化方法</b></div>
+									<div class="col-sm-4"><i>数据处理、实验</i></div>
+								</div>
+								<ul>
+									<li>权重初始化对神经网络训练的收敛速度和效果产生很大影响，现今的方法缺乏数据先验知识</li>
+									<li>贝叶斯分类器可预处理得到先验知识用作权重来初始化神经网络，多层网络则先用 SVD 分解</li>
+									<li>配合自定义的激活函数，在较深层的网络中收敛速度比基准方法快，且收敛效果稳定</li>
+									<div class="tags">
+										<a href="https://zh.wikipedia.org/wiki/神经网络">神经网络</a>
+										<a href="https://zh.wikipedia.org/wiki/朴素贝叶斯分类器">贝叶斯分类器</a>
+										<a href="https://zh.wikipedia.org/wiki/奇异值分解">SVD分解</a>
+										<a href="https://zh.wikipedia.org/wiki/机器学习">机器学习</a>
+										<a href="https://keras.io/">Keras</a>
+										<a href="https://www.python.org/">Python</a>
+									</div>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3"><b>2015.10 - 2016.03</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>HTML5 轻量级游戏及游戏分发平台</b></div>
+									<div class="col-sm-4"><i>游戏策划、网页与后台编程</i></div>
+								</div>
+								<ul>
+									<li>游戏：利用 canvas 的新特性，手工编写了一个具有运动学物理效果的乒乓球对战游戏</li>
+									<li>平台：用 Material Design 的 Bootstrap 框架搭建响应式网页，并从后台动态加载数据</li>
+									<div class="tags">
+										<a href="https://zh.wikipedia.org/wiki/运动学">运动学公式与定理</a>
+										<a href="https://zh.wikipedia.org/wiki/响应式网页设计">响应式设计</a>
+										<a href="http://www.w3school.com.cn/html5/">HTML5</a>
+										<a href="https://www.djangoproject.com/">Django</a>
+										<a href="https://www.python.org/">Python</a>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<h5><i class="fa fa-users" aria-hidden="true" style="margin-right: 10px"></i>学生工作</h5>
+					<hr>
+					<div class="info-box">
+						<div class="row">
+							<div class="col-sm-3"><b>2014.02 - 2014.07</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>中山大学前移动信息工程学院</b></div>
+									<div class="col-sm-4"><i>软件设计II 课程助教</i></div>
+								</div>
+								辅导本院 2013 级学生 C++ 程序设计上机实验课
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3"><b>2013.06 - 2014.06</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>中山大学珠海校区学生会港澳台同学部</b></div>
+									<div class="col-sm-4"><i>宣策部部长</i></div>
+								</div>
+								管理宣传和策划工作，与校内港澳台生建立良好关系
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3"><b>2012.09 - 2014.01</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>中山大学翻译学院学生工作办公室</b></div>
+									<div class="col-sm-4"><i>学生助理</i></div>
+								</div>
+								负责办公室日常接待、文件处理事务，熟悉基本办公室技能
+							</div>
+						</div>
+					</div>
+
+					<h5><i class="fa fa-tags" aria-hidden="true" style="margin-right: 10px"></i>所获奖项</h5>
+					<hr>
+					<div class="info-box">
+						<div class="row">
+							<div class="col-sm-2"><b>2016</b></div>
+							<div class="col-sm-10">中山大学优秀本科毕业生</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2"><b>2015</b></div>
+							<div class="col-sm-10">中山大学优秀学生三等奖学金、国家励志奖学金</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2"><b>2014</b></div>
+							<div class="col-sm-10">中山大学前移动信息工程学院　中级工程实训自主创意开发作品奖（智能车）　三等奖<br>中山大学优秀学生一等奖学金、国家励志奖学金
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2"><b>2013</b></div>
+							<div class="col-sm-10">“6CIT”杯第五届中山大学 ICPC 新手赛　三等奖<br>中山大学优秀学生二等奖学金、国家励志奖学金
+							</div>
+						</div>
+					</div>
+
+					<h5><i class="fa fa-language" aria-hidden="true" style="margin-right: 10px"></i>语言能力</h5>
+					<hr>
+					<div class="info-box">
+						<div class="row">
+							<div class="col-sm-2">英语*</div>
+							<div class="col-sm-4">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: #F57C00;">
+										<span class="sr-only">45% Complete</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">普通话</div>
+							<div class="col-sm-4">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%; background-color: #F57C00;">
+										<span class="sr-only">45% Complete</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">日语</div>
+							<div class="col-sm-4">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #F57C00;">
+										<span class="sr-only">45% Complete</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">广东话</div>
+							<div class="col-sm-4">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%; background-color: #F57C00;">
+										<span class="sr-only">45% Complete</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="font-size: small;color: #aaa">*大学英语六级</div>
+						
+					</div>
+				</div>
+
+				<!-- English Version -->
+				<div class="en post-container">
+					<blockquote>
+						<p>A light chaser</p>
+					</blockquote>
+
+					<h5 class="small-caps"><i class="fa fa-graduation-cap" aria-hidden="true" style="margin-right: 10px"></i>Education</h5>
+					<hr>
+					<div class="info-box">
+						<div class="row">
+							<div class="col-sm-3"><b>2016.09 - Present</b></div>
+							<div class="col-sm-9">
+								<b>Sun Yat-sen University, MEng in Software Engineering</b><br>Major: Software Engineering, School of Data and Computer Science
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3"><b>2012.09 - 2016.07</b></div>
+							<div class="col-sm-9">
+								<b>Sun Yat-sen University, BEng in Software Engineering</b><br>Major: Software Engineering (Mobile Infomation Engineering), School of Data and Computer Science<br>Minor: Japanese, School of Foreign Laguages
+							</div>
+						</div>
+					</div>
+					
+					<h5 class="small-caps"><i class="fa fa-code" aria-hidden="true" style="margin-right: 10px"></i>Research &amp; Project Experience </h5>
+					<hr>
+					<div class="info-box">
+						<div class="row">
+							<div class="col-sm-3"><b>2016.10 - 2017.02</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>Image Reasoning Using Scene Graph and Image Alignment</b></div>
+									<div class="col-sm-4"><i>Model Design, Core Codes</i></div>
+								</div>
+								
+								<ul>
+									<li>Scene gragh is composed of relational and attributional triplets with objects, attributes and relations as its elements.</li>
+									<li>CNN features are applied to objects and attributes and bounding box features are applied to relations. Triplets are embedded by tranlation model.</li>
+									<li>The alignment model jointly embeds the visual features and triplet features, which solves the issues of multiple scene graph elements in an image feature and multiple semantics in an element and realizes image reasoning.</li>
+									<div class="tags">
+										<a href="https://arxiv.org/abs/1311.2524">R-CNN</a>
+										<a href="https://www.ijcai.org/Proceedings/16/Papers/407.pdf">KR-EAR</a>
+										<a href="https://en.wikipedia.org/wiki/Computer_vision">Computer Vision</a>
+										<a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a>
+										<a href="https://en.wikipedia.org/wiki/Knowledge_Graph">Knowledge Graph</a>
+										<a href="https://www.python.org/">Python</a>
+										<a href="https://cn.mathworks.com/">MATLAB</a>
+									</div>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3"><b>2016.12 - 2017.01</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>A Bayesian Initilization of Neural Networks</b></div>
+									<div class="col-sm-4"><i>Data Preprocessing, Experiments</i></div>
+								</div>
+								<ul>
+									<li> Weight initilization has great influence on the convergence speed and final effect, but most of the approaches are lack of prior knowledge. </li>
+									<li> By preprocessing data via Bayes classifier, the prior knowledge of weights are applied to initialize neural networks. If there are multiple layers, the weights are to be decomposed by SVD. </li>
+									<li> With a new activation function, the experimental results show a relatively high convergence speed and stable convergence effect than the baselines. </li>
+									<div class="tags">
+										<a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Neural Network</a>
+										<a href="https://en.wikipedia.org/wiki/Bayes_classifier">Bayes Classifier</a>
+										<a href="https://en.wikipedia.org/wiki/Singular_value_decomposition">SVD</a>
+										<a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a>
+										<a href="https://keras.io/">Keras</a>
+										<a href="https://www.python.org/">Python</a>
+									</div>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3"><b>2015.10 - 2016.03</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>Light HTML5 Games and Their Distribution Platform</b></div>
+									<div class="col-sm-4"><i>Game Design, Web and Backend Coding</i></div>
+								</div>
+								<ul>
+									<li>Game: using the new features of canvas, we implement a ping-pong ball game with physical effect in kinematics.</li>
+									<li>Platform: by Bootstrap with Material Design, we build a responsive website that dynamically loads data from the server using ajax.</li>
+									<div class="tags">
+										<a href="https://en.wikipedia.org/wiki/Kinematics">Kinematics</a>
+										<a href="https://en.wikipedia.org/wiki/Responsive_web_design">Responsive Design</a>
+										<a href="https://www.w3schools.com/html/html5_intro.asp">HTML5</a>
+										<a href="https://www.djangoproject.com/">Django</a>
+										<a href="https://www.python.org/">Python</a>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<h5 class="small-caps"><i class="fa fa-users" aria-hidden="true" style="margin-right: 10px"></i>Campus Experience</h5>
+					<hr>
+					<div class="info-box">
+						<div class="row">
+							<div class="col-sm-3"><b>2014.02 - 2014.07</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>Former School of Mobile Information Engineering, SYSU</b></div>
+									<div class="col-sm-4"><i>Sofware Design II, Teaching Assistant</i></div>
+								</div>
+								Tutoring students in C++ software design experiments.
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3"><b>2013.06 - 2014.06</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>Department of Hong Kong, Taiwan and Macau, Student Union of SYSU (Zhuhai Campus)</b></div>
+									<div class="col-sm-4"><i>Head of Publicity and Planning</i></div>
+								</div>
+								Managing work on publicity, planning and communicating with students from Hong Kong, Macau and Taiwan.
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3"><b>2012.09 - 2014.01</b></div>
+							<div class="col-sm-9">
+								<div class="row">
+									<div class="col-sm-8"><b>Student Affairs Office, School of International Studies, SYSU</b></div>
+									<div class="col-sm-4"><i>Office Assistant</i></div>
+								</div>
+								Daily reception, document handling in office.
+							</div>
+						</div>
+					</div>
+
+					<h5 class="small-caps"><i class="fa fa-tags" aria-hidden="true" style="margin-right: 10px"></i>Honors &amp; Awards</h5>
+					<hr>
+					<div class="info-box">
+						<div class="row">
+							<div class="col-sm-2"><b>2016</b></div>
+							<div class="col-sm-10">Excellent Bachelor of Sun Yat-sen University</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2"><b>2015</b></div>
+							<div class="col-sm-10"> Excellent Student Scholarship (3rd prize), National Encouragement Scholarship</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2"><b>2014</b></div>
+							<div class="col-sm-10">Creative Work Prize of Middle Stage Engineering Training of Former SMIE (Intelligent Car, 3rd Prize)<br>Excellent Student Scholarship (1st prize), National Encouragement Scholarship
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-2"><b>2013</b></div>
+							<div class="col-sm-10">"6CIT" Cup, 5th ICPC Competition of SYSU (3rd prize)<br>Excellent Student Scholarship (2nd prize), National Encouragement Scholarship
+							</div>
+						</div>
+					</div>
+
+					<h5 class="small-caps"><i class="fa fa-language" aria-hidden="true" style="margin-right: 10px"></i>Language</h5>
+					<hr>
+					<div class="info-box">
+						<div class="row">
+							<div class="col-sm-2">English*</div>
+							<div class="col-sm-4">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: #F57C00;">
+										<span class="sr-only">45% Complete</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">Putonghua</div>
+							<div class="col-sm-4">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 90%; background-color: #F57C00;">
+										<span class="sr-only">45% Complete</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">Japanese</div>
+							<div class="col-sm-4">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 50%; background-color: #F57C00;">
+										<span class="sr-only">45% Complete</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2">Cantonese</div>
+							<div class="col-sm-4">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%; background-color: #F57C00;">
+										<span class="sr-only">45% Complete</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="font-size: small;color: #aaa">*Passed CET-6</div>
+						
+				</div>
+			</div>
+
+			<!-- Handle Language Change -->
+			<script type="text/javascript">
+				// forEach method, could be shipped as part of an Object Literal/Module
+				var forEach = function (array, callback, scope) {
+				  for (var i = 0; i < array.length; i++) {
+					callback.call(scope, i, array[i]); // passes back stuff we need
+				  }
+				};
+
+				// get nodes
+				var $zh = document.querySelectorAll(".zh");
+				var $en = document.querySelectorAll(".en");
+				var $select = document.querySelector("select");
+
+				// bind hashchange event
+				window.addEventListener('hashchange', _render);
+
+				// handle render
+				function _render(){
+					var _hash = window.location.hash;
+					// en
+					if(_hash == "#en"){
+						$select.selectedIndex = 1;
+						forEach($en, function (index, value) {
+						  value.style.display = "block";
+						});
+						forEach($zh, function (index, value) {
+						  value.style.display = "none";
+						});
+					// zh by default
+					}else{
+						// not trigger onChange, otherwise cause a loop call.
+						$select.selectedIndex = 0;
+						forEach($zh, function (index, value) {
+						  value.style.display = "block";
+						});
+						forEach($en, function (index, value) {
+						  value.style.display = "none";
+						});
+					}
+				}
+
+				// handle select change
+				function onLanChange(index){
+					if(index == 0){
+						window.location.hash = "#zh"
+					}else{
+						window.location.hash = "#en"
+					}
+				}
+
+				// init
+				_render();
+			</script>
+			
+		</div>
+	</body>
+</html>
